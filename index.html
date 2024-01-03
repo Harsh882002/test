@@ -1,192 +1,782 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Harsh Patle</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:harsh@gamail.com" class="contact-link">harsh@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:1234567" class="contact-link">+91- 1234567</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-08-08">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Nagpur,Maharashtra</address>
+            </div>
+
+          </li>
+
         </ul>
-        <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Harsh Patle</div>
-          <div class="text-three">UI/UX Designer</div>
-          <div class="text-four">From Bhandara</div>
-        </div>
-        <div class="button">
-          <button>Hire Me</button>
-        </div>
-      </div>
-    </section>
+        <div class="separator"></div>
 
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src=https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">Designing Is My Passion</div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste
-              iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.
-            </p>
-            <div class="button">
-              <button>Download CV</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <ul class="social-list">
 
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="skills" id="skills">
-      <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
-            <div class="experience">
-              <div class="num">10</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative develpope and cyberSecurity engineer from Nagpur,Maharashtra working in web development and
+            print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"> cyberSecurity Engineer</h4>
+
+                <p class="service-item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad iusto dignissimos! Doloremque minus
+                  cumque pariatur laudantium officiis perspiciatis recusandae. </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxAQEBIQFRUQEA8VFRAWEA8PDxUQFRUWFhURFRYYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGBAQGyslHyUwLTAwLi4tLS01Ky0uLS0tLzAtLSstLS0tLS0tLS0tLSstLSstLS0tKy0tLS0tKy0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAwECBgQFBwj/xABFEAACAQIDAwcHBwsEAwAAAAABAgADEQQSIQUxQQZRYXGBkbEHEyIycqHBM0JSc4Ky0RQjNUNTYpKzwuHwJYOToiR08f/EABoBAQADAQEBAAAAAAAAAAAAAAABAgQFAwb/xAA1EQABAwIEAwYFBAEFAAAAAAABAAIRAyEEMUFREmGBBRNxobHwIjIzkdEUQsHxNBUjcoLh/9oADAMBAAIRAxEAPwDxYSZE+jXMRJhCERCEIREIQhEQhJhFEIQhEQhCERCEIREIQhEQhKGqgvdlFuF9T0AQiaVO+3uMrFVNqDKFzMwB0XXKD0AznOOPADvhjX/uHv37OaOLf2+/t78F0JTysrvuYAov7p+eek8OiejiabFVZWDDgPo9k8tqnndV3fEaWl6LgabumZhRcIdI4tdv/I8V1f11O9Ag92DYts4RadjxZkHXUEJiUgLsNDx5r31PhGU6mW3Toeq0QLZvjHAbydbcP78JL2gUnNeJBtA52geJsOZC8xW48Ux9EkcMfE+P23LnRMwBBiSQLSVFWllY633EdovedOz8E1Zwq9rWuBOY1c+vbaXpYxqV8rEXtccDaVeMT+nhhHeRmcp98om8Qs7zQ78lgPdyYHLTpsJmIm69/D4ClTz06y3uCVqcGUb8p4Nu08Zn6qWYrzEjuM9DEbVLUfOEjPcIoHBVsS9u0Drnlqb6zB2TTxIdVfXteIkkcQmXCZgHbK2gDQPTFupQxrPY0B5+8ySphCMoBb+kSBY7tSdNLdZnYcYBPvpzWMCSAlwhCSoRCEIREISIRTCEIREIGEIiEmEIiEIQoS6tZE9ZlXrIHjFHH0f2lP8AjWZXG1i9RmbfmPYAdAJzz3FLcotgdo0f2id95U7VoD54/hY/CZMSwk9yEWnO2aH0ifstFttylwDnsX8ZnYSe6aoJXvtt1eCN2sB+MU2224Io6yT+E8iXju2qpcV6J2vVP0R2fjFnHVTvc9lh4TkWMEnhGyrJTjUY7yT1kmSsWsYDIRNWMWLWMWVKlduzMSnm8mdbsz3XML3DNbSdTIDMDX+Uf6x/vGbHYWIapQUsbkFhfibHQnsmVp0Wh82v7z9SV2JTAkueaNU2vpe47td/+c8raXBVDkqqtpWol5eEIUuvhirlSQbWvY3F+PdGASAZaQ0EAAmTvupcQSSBCiQZaElQoEJMIUKIQhClEiTIhFMmRCEUwkQhQphIhCIhCEKVia3rN7TeMXGVvWb2m8YubVCsJYSolhChTCEIUFXl5SNpU2ZlVQSzEKqjUlibBR0kmQqFP2fg6teotKijO7myooux/AdO4T6jsDyPsyh8dWKX/U0cpYe1UYEdgB65s+QXJCns3Di4U4iooNarvN9/mlPBR7zr1aycTE9ouLi2lYb6n8cout9LDACX5rIYLycbKpW/8fORxqVar3+zmy+6ezQ5O4GkD5vC4ZdDqKFIHvtPWlKvqt1HwnOfVqO+ZxPUrQ1jRkAvy0u4RqxNLcI5Z9Q7NcgZLI4tvz1S1/lH8TNXyXqn8nHtP4zMYp0/Pgqc5r3DcAg85mXrJKH7M03JZb4fqZye+3xE5+Hlz3D3ot9YfAOi98nS1tdDfwEiLzkkX5t86MPRaowRd57B1maqjgPALMGlxAGathsM1Q5VtoCTc2AA6ZSrRZNWFgd2mh6jL1aTUjdl0U2PEd89mti6lBUYZXp1EIVWFwtxfTrHPfjMFTEPFVoYGlrha+ZGYm4mN/uF0qeEp9y/vC5r2m9sgcjwwDE2kXGfCQs/Jku2Yk6ancNJE2jJc1wANkX8L90RUxAG4H3RxijUTmH8IlSHTYrTQfQaD3rCTpBgdVNBywuRbXq0jJSm95eWXg9wc4uAgbbIhCEKqJEmEIiEIQiIQhCIhCEIiAhCEWJres3tHxi4yt6ze0fGLm0KFYSwlRLCFCmEIQoKvNx5INlivtRGYXXDU2rdGcWVO4tm+zMPPq3kEQeexzcRSw47Cz38BMuMcW0HkbepA/lXoiagX2aJxFZaaNUchVRWZmJsAqi5Y9AAjplvKbVKbIxpHGmi9j1EQ+5jPm2N43Bu5hdFxgErD7b8rlZnZcFSpqgJAq1Qzuw+kEBAXtvMxjeXm1K1w2KdQfm01p0R2FQG98y6xiz6NmFosyaOt/Vcx1V7symLGrFrGLPUqix2N+Vq/WP94zXcm6v5i9hqWFgAB3dk8HD4Ba1WuPOKriq2VT8/0muPCaDYmFanSCNvDNuNxYmYKDvjK6dejUFBtSPhMX8r7dV7VBSSABckiw6eaehjsEUF7XYE5wLOgH0rjcJ5/COwO0HpXCHQ7xvvJrMqGCwi2YOTuRP5HUa+WHqUgC2pN8iI+E7wc+jh109dMQ6UFrU7NTLDNTYXXfbr3i3dPHxmOeuReyhb5aaiyLfmEbtDaTV9PQpi9/NoMqk29Y884qaW1njhMK2kJLRMmNSBpJ1MWnOOcrTj8a6q6A6WkCdidYGYBImJz3EKwEtInThcPmuzGyL6zcfZHTNpMLlucGiSucypoW1IYX5xlnVUcsDkXKq62Gh63beTHYPabICjjOjb1IDHrB55Ul2gVZfmB+fx91wAQjsVRykEA5XGZeOkTLAyJVmOD2hwyKIQhCsiRJkQimEIQiIQhCIhCEIiEIQixNb1m9pvGLjK3rN7TeMXNoUKwlhKiWEKFMIT2+SHJ59o4oYZHWmSjvnYFhZbXFh1yrnBoLnZBACTAXjz6z5A/lcf7GG8asth/Imf1mOHUuGPianwm15FciaWyzWanVqVDXFMNmCKBkzWsAP3jvM5mMxlF9FzGukmNDuDqAtFKi9rwStZMj5VP0NjP9j+fTmuia9BKilXVWU2urKGU2NxcHpAM49J/A9r9iD9lre3iaRuvyxhqD1DamjueZVZz3Ce3S5J7QNNqv5LWVEVmZnUUQEUXLemQToOE/R1OmqiygAcwAA908Ll9X83svGnnoOn/J6H9U6f+pOc4Na0X5z+FkOFDQST781+eFjVi1jFnUOayLLbVoBKps6tnzMbG+UlmGRuYi3vE0nJpiaAuSfSbeb8ZlMb8rV+sf7xmq5L/ID2n8Zz8OCCQTut1eOGQIyWglGpiWlwlzYa+6aVmDSbD3/KQqWMuWnStCwzPoOA3Mx5h0dMTbeeb4yJlQ34/lv79yunCJRJAqGsCTvUUyPxnZtbD+bQLTKlUOouBUzniRPJp1MrK1tAynsBvPSx9Bvyy28VMmU71KmwPdaUcIOax1w5rg4HKXQcjGmkWmM4XBhapQm+oYWK84lmwqE3SooH75taLxSWZwpvZ3seBAMSKnPLReQtBZPxNJE+HmDIXfjsSr5ES5WlTVMxFsxG97cBOWLpjeeeXlgIVmMDG8I9+yiBnVQRV1qqxBHAi4PPbjOd7XNt0u5haL+/x1XqWwLqsIQlFVEIQhEQhCERCEIREsJWAhFiavrN7R8YuMres3tN4xc2qFYSwlRLCFCmb3yKfpZf/Xr/ANMwU23kfxNOltQPVdEUUK4zOyot/R0udJnxf0H+BV6XzhfomE8Cvyx2am/G4XTgKyMe4GP2JykweNaouFrCoaQQvZXAAa+XUgA+qd0+a7t8TBjwXR4huvYhCeHyx2w2BwNbFIqu1LzdlYkKc9RU1t7V+yQ1pc4NGZQmBJXuTFeV2tl2VUX9pWw69zh/6J89xPlV2lUuF/J6fSlEkj/kZh7pntrcosZiwFxNepUUEMEOVUDajNlUAXsT3zpUOz6jXte4ixn3oslTEtLSAuBYxYtYxZ1isay9RaPnn861Ujzj3FNVv6x0uxFj2GbPk1UwfmRaniCMzes9PNe+vq2EweN+Vq/WP94zW8lqVRqFkUn038ZzmFoJLjHWFsqUXVIDeInYeE5ASVsqeLwtlBp1CqkkCwJ1+3FVMZSAOSnv3EqBbxnB+TVQfSGXr/CRU1a+bfbWxA0Esw0jIZfOYvcmTMa6nmvKp2c+3f8AEMoD3EWjZxBgQALcOkiFavWLEEm55uYc0rL0cPcaG55rW/z3wp0SzZQLnfbjLitTgmYjObQOYMR4lersJVZwjgsbNi4PJpbIJ5AyNlQ7pK4yr5vKHYAC1sx3c199pBEamBOXOSFHPcH3SalRlMAvMfyeQzJ5BedPDurmGt4ovpbmSbDxNvJKQ6CdmF2c1QAqya/NLWMUMMbEpdgObTxnKzgb55ucazSKLwCDtMciCR7C9jTOHcO/ZIIkXiRuHCQelk+tSKMynepIPHURZtOgYViATYZhoCdYgUyxte3SNTuk08VT4XEOB4Re22ZH2MRO2is7A4hrmAsI4/lki8xbOxuLGEp6vASUB4zpXZ9mPpqdL+86aRMvTxFOtdjpy88ue6piMLWoEd60iZ2vGcEZxKIQhPRZ0QhCERCEIREIQhFMgQkiFCxFb1m9pvGLl63rN7TeMpNqKwlhKiWEKFMIQhQVYT615AvlMf7GF8as+TT6z5A/lcf7GG8asx4//Hf09QvTD/UC+xzI+VX9DYzqofz6c10yPlU/Q2M/2P59KcLDfWZ4j1W6r8jvA+i/Pqxixaxiz6VcpNWMWLWMWVKlY7F/K1frKn3jN1yYoOmCFRKikAsWVWyutzaxG/m3THVsBWc4iqlN2p06j56gUlF9LieE0fJPDmpSVVUs2ZzYb7XnMa0uNiBfUTbyg7HTYiy6ZcWi0ycoJB8s+Y9DdaQ0SaZq3uA4Uj961/jEq1uF/dH0sWUpPQyrZ8pNwcwI5u4RJE96XeEvD9/h/wCMD7QZB++qyvLPhLBeLzeXXk3VA06qWMK6tYngb5SD0S9HZtR+AGl7EkE9QnLWwjLfo7RPB1bCYh3dFzXO2kT01B3AM72U0MTUok906JzGYPiDIPKQYXZjMaKhUtYkLa4GUnpJ4mcVSqT6394pFO7+8tTpy9DB0aPDwNyEDkNhoOcROS9q2OrVWFhIAJkgCJO7tTykkDSE/DYwodDv3jgYxjSZiTp1c85a1McCL9F5S7DSTVwjHv47gxEgxI578jnsrUO0KtFndw1zQZAc0Og7icj5HUJj1yWvf/OMbVxAIBZL2+cGAJnOlPTXjIyndJ/TUoaAIgQIkQNpEGOUqgxtfic4uniMniAcCd4cCJGhiQLAwugYsa+jqeJOYiLihRjgJalQp0RFNoCriMXWxBBrOLo3552Fr62vCIXhCeqzohCEIiEIQiIQhCIgISRCLEVvWb2m8YuXres3tN4yk2qFYSwlRLCFCmEIQoKvPq/kDP57H/V4b71SfKJ9V8gh/P436qh955jx/wDjv6eoXph/qBfZ5k/Kn+h8Z1Uf51OayZXynj/R8Z7FL+ak4OH+szxHqt9T5HeC/PKxixaxiz6ZclNWMWLWMWVKlezsXDUkTD4dyf8AUWxlwBqbE2HvUSnJjZjYXDVHrAqaeIZN2UnK+ViPf3TA7Sx1VqozO35h2WnrlyAOWGW243N775q9n7XxGIoKK1Vnszb7cNAdBrMFMlzoXbfimtYHAXaIbyJbEnwMlaLbOE83WNtzAMuobTrHTec/n2ta9wOfW0WlQlQCSbaDW9hIZLy9SjTqt4ajQ4cwD5GVzKzmveXAWN/v795BtXGMRZmOnDh/eXwlUAkcCN3d8M05kpAHX0u20hvRsRwnjicK2phn0GANkGIsAcxlzAuvNzQWwNffhf8AuE2oLE9cMhtextz62j6K0yucvr9Ar7tN8edo3KrYBAV9HT/AJlGMxTqYDaR4wPiLhAkC4bF3TFuGwBF1STGS88NrLiob3OultdZasgNQ8AX4cxPCTjcEadrNe99x14b++bGdoUppt4rvHENoic8t/HRXDgkmEgSZpUohJkQiIQkQimTIhCKZEIQiIQhCIkyJIhFiK3rN7R8YuPxdMrUdSNQx8dDETaFCsJYSBCIUK0JXMOcd4kefQb2XvEguAzKQU6fU/IMf/Jxn1FL75nyU4ymPnDxm18lvLbA7Or4ipiXcCpRVVy02clg17dGkw42rTNBwDhPiNwvWgxweDBX6OmY8pQvsjG/VL7nUzG4ny8bOHyeHxjdJWggP/cn3TJ8qPLW2MwtbDJglpisuXO2INQgXvfKEHNuvODSeGva46ELc4SCFlFjFmbfbFU7so6h+MfTqVa9NyrPnooXZQSA9Ies4AGhXQnnBJ0tr2KnalBu6xNwjzmQtCCLgXFybAX1J5hIxNWol1WjWZuA804F+kkWtMOTx989vB8pcTTUL5wOL6BwGI7d/vmSr2lWd9JrR4n+gt2FwmFk/qC7lwgec36gr1KHJOvVLVKhSkGJOW/nW17be+avZOwKdCmpQlrE3uqnU8CAZi25X4ojKvm06VQE/9iZ7Ox6lV6YFViWbMxzGxA326NJmo0MXVJl4aOQm3X+XFdariezKQApUXVHaSS3+ujQvfrUdSwAH7ovYdRPCJIk4Gtr2fCXrDcR87h0gDT/OebaWIdTrfpqhkxIOU553N7G832Ga5uIwbKuF/W0RA4oc0meE2ggwJBkWNxNpGSWqKu8X6Bb8JGjrpBiBvkqZvvquc51PgAa0g6mRfytykmOqSpK6QKEi5j4QvJXw1VR6TZjbiCPC066O0l1Y+kSLWNrgb7brb55jIdbRYQ7pza3ZOHqmTI0gExBMkQZABOYbGearwBdRMJUSZ01KmRJMiQiJFoXhClTCBhCIhCEIphCEKEQhCESK+FpvbOitbdcAxZ2ZQP6qn/As6oQpXCdjYY/qk/htFPyewp30l7GceBnpyZUsacwFPEd15B5NYT9mR9t/iYtuS2GO4OOpvxE9qEjumbD7BW7x25XgHknQ4PU/6H+mJfkinzapHWgPxE0sJYNA0TvH7rKtyTbhUQ9aEfExD8lqw3Gke0j4TYSZYFT3rlhn5PYgfqweplPxnVsenWwmIpVvMt6DajIWBQgq66c6kjtmukPuku4XtLXNBBEG2hTvXZrO8o9i08PW9DK1KqM9JsuhU65deIvbunLhtnBwzBFtTALGwsATYdpPCbKlibrkYBl+ib6HnHMZzVcLSO5BY7xpf3WvPGi6o1gZUuR+7OQNSLQ4jP8AbNxIspqFrncTddNj+J6xYgLP4bBoNcqj7IBnr0aYEZ+QrwuO2/jOrC4WkAxdzpuQLcntOgno+o1rZAPQE+gNueQzMBeTGFxgkdTHr/fIqFUBlPXGHcR0k9hIHwETVHoxuGu+7ePWXd2zkdosdTq08S0SG5+H4ub6WX0fYtVlXD1sC4wX3b4x6iAY1vsqFRxEvTpG2g054xUykXUnm0t749sUEBGhv83gDzyzu0+9dwYVpcdzYDx19ORKozsPuafe4+oKbdhcnwzHMRxGM4XGR/lx8JE6nymkTYXKg36c1pyzTga76zHccS1xBjl/axdq4SnhqrBSJ4XNa4TmJn8T1XSuFJpGouuQgMLarfceqc0BU3i5F7XF9DbnhNLGvHFxGb2tkNjvBna0AyRJ573NMQIt9zvffXnJETAIGRJl1REISIREIQkIphCElEQhCERCEIREIQhEQhCERJhCFCiRCEKVMIQhFEIQhERtBlDAsLjiN0ISHMDwWnXYwehFx4hWa4scHDTr5Gx6p20sCKZRkYFai5hrrbpErhMJnzMzKiJbM5137go4mEJz6VWp+maS6XcQbNp+pwTlExyicwVoexhqugQImNPlmN465WXTjfMEpZ3+TUFrKbkXFyL6GwE4a6ZbFSGB4i415iDqIQnth2GnSYeImbQY/CrXIdUcIiPHYc+apaczAqbjvMiE1C68MoPuybUxZbeT13ilDNCENAAgCApe4udxOMnc3K66D2ULzWv338R75H/2EJzsL8OKrsGVndTBPquzjv8Ad7PwtV2Y4mf9WzH2jzO6giTCE6S4iiSIQhFBhCEIpkQhCL//2Q=="
+                    alt="Facebook" width="70" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Facebook</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, assumenda nam cum consequuntur
+                    voluptatem earum natus, quae expedita quis eaque, commodi corrupti!.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Google</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error id libero, corporis saepe iste quos
+                    ullam rerum. Quae aliquam distinctio quis architecto corrupti maxime ad qui praesentium
+                    voluptatibus, quasi alias soluta earum libero ipsam labore autem.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-          </div>
-          <div class="boxes">
-            <div class="box">
-              <div class="topic">HTML</div>
-              <div class="per">90%</div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
             </div>
-            <div class="box">
-              <div class="topic">CSS</div>
-              <div class="per">80%</div>
-            </div>
-            <div class="box">
-              <div class="topic">JavScript</div>
-              <div class="per">70%</div>
-            </div>
-            <div class="box">
-              <div class="topic">PHP</div>
-              <div class="per">60%</div>
-            </div>
-          </div>
+
+          </section>
+
         </div>
-      </div>
-    </section>
 
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-        <div class="title"><span>My Services</span></div>
-        <div class="boxes">
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="topic">Web Devlopment</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="topic">Graphic Design</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="topic">Digital Marketing</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-android"></i>
-            </div>
-            <div class="topic">Icon Design</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-camera-retro"></i>
-            </div>
-            <div class="topic">Photography</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-tablet-alt"></i>
-            </div>
-            <div class="topic">Apps Devlopment</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact Me section Start -->
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">Have Any Project?</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
-          <div class="button">
-            <button>Let's Chat</button>
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="text">
-        <span>Created By <a href="#">CodingLab</a> | &#169; 2021 All Rights Reserved</span>
-      </div>
-    </footer>
+          <ol class="timeline-list">
 
-    <script src="script.js"></script>
-  </body>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PCE Nagpur</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deleniti? Quaerat ipsa, sit doloribus
+                placeat recusandae exercitationem libero voluptatem numquam.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">K.K.jc Sakoli</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">K.K.High School Sakoli</h4>
+
+              <span>2014 — 2018</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">cyberSecurity</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Networking</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29748.951593916016!2d79.0672553232078!3d21.246953749254228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c3963b47f5db%3A0x92ce1c956940e023!2sMahadula%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1704269086608!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
